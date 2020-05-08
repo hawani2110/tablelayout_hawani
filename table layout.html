@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nurul Hawani</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #ff0040;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ffb3c6;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #ff6347;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color:   #9f6060;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Table as Layout</h2>
+
+<header>
+  <td style="width: 900px;"><img style="-webkit-user-select: none;margin: auto;"src="https://lh3.googleusercontent.com/Cj1tfFMn8QiN2PDSIuBGFcNkF-L-sMtJk7tkBQ2J_7Ni7OZ2Kb2C5JA_F3LjitHL0dY" style="width: 1210px; height: 250px; margin: 0px;"></td>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Biodata</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Mobile Legend</h1>
+    <p>Mobile Legends: Bang Bang is a multiplayer online battle arena (MOBA) game designed for mobile phones. The two opposing teams fight to reach and destroy the enemy's base while defending their own base for control of a path, the three "lanes" known as "top", "middle" and "bottom", which connects the bases.Weaker computer-controlled characters, called "minions", spawn at team bases and follow the three lanes to the opposite team's base, fighting enemies and turrets.</p>
+    <p>In each team, there are five players who each control a character, known as a "hero". Heroes can be grouped into 6 different roles, Marksman, Assassin, Mage, Support, Fighter and Tank.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
